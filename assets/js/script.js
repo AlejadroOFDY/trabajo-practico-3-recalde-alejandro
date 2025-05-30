@@ -4,7 +4,7 @@ const searchInput = document.getElementById("searchInput");
 const contenedorPadre = document.getElementById("contenedor-carta");
 
 // Acá se almacenarán los personajes
-let todosPersonajes = [];
+let totalPersonajes = [];
 
 /* Carga los datos de la API*/
 const cargarDatos = async () => {
@@ -14,13 +14,15 @@ const cargarDatos = async () => {
             throw new Error("Error de la Api");
         }
         const data = await response.json();
-        todosPersonajes = data.items; // Guardamos en variable global
-        mostrarPersonajes(todosPersonajes);
+        totalPersonajes = data.items; // Guardamos en variable global
+        mostrarPersonajes(totalPersonajes);
     } catch (error) {
         console.log(error);
         contenedorPadre.innerHTML = `<p class="text-danger">Error: ${error.message}</p>`;
     }
 };
+
+
 
 /* Función para mostrar personajes */
 const mostrarPersonajes = (personajes) => {
@@ -50,11 +52,11 @@ function buscarPersonajes() {
     const texto = searchInput.value.trim().toLowerCase();
     
     if (!texto) {
-        mostrarPersonajes(todosPersonajes);
+        mostrarPersonajes(totalPersonajes);
         return;
     }
 
-    const filtrados = todosPersonajes.filter(p => 
+    const filtrados = totalPersonajes.filter(p => 
         p.name.toLowerCase().includes(texto)
     );
     

@@ -1,14 +1,21 @@
+body {
+    background-image: url(/assets/img/kame-house.jpg);
+    background-size: cover;
+}
+
 .card-img {
     object-position: center;
 }
 
-/* Mejora el espaciado entre tarjetas */
+/* La carta es ligeramente transparente y comparte color con el fondo */
 .card {
+    background-color: rgba(245, 183, 38, 0.306);
     margin-bottom: 20px;
     padding: 5px;
-    overflow: hidden; /* Evita que la imagen sobresalga */
+    overflow: hidden;
 }
 
+/* Para alinear el nombre */
 .card-title {
     text-align: center;
 }

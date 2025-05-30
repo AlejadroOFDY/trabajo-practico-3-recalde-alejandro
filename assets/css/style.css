@@ -20,6 +20,7 @@ body {
     text-align: center;
 }
 
+/*Para que el error sea más legible debido al fondo*/
 .mensaje-error {
     display: inline-block; 
     background-color: #f5c72f;    
@@ -31,7 +32,4 @@ body {
     margin: 20px auto;            
     text-align: center;
     width: fit-content
-
 }
-
-/*bg-warning border border-danger rounded text-dark p-1text-center fw-bold">No se encontraron personajes*/

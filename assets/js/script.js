@@ -14,11 +14,11 @@ const cargarDatos = async () => {
             throw new Error("Error de la Api");
         }
         const data = await response.json();
-        totalPersonajes = data.items; // Guardamos en variable global
+        totalPersonajes = data.items; // Guardamos en una variable global
         mostrarPersonajes(totalPersonajes);
     } catch (error) {
         console.log(error);
-        contenedorPadre.innerHTML = `<p class="text-danger">Error: ${error.message}</p>`;
+        contenedorPadre.innerHTML = `<p class="mensaje-error">Error: ${error.message}</p>`;
     }
 };
 

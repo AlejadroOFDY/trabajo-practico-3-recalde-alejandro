@@ -1,0 +1,14 @@
+.card-img {
+    object-position: center;
+}
+
+/* Mejora el espaciado entre tarjetas */
+.card {
+    margin-bottom: 20px;
+    padding: 5px;
+    overflow: hidden; /* Evita que la imagen sobresalga */
+}
+
+.card-title {
+    text-align: center;
+}

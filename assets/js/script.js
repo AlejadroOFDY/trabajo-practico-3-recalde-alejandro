@@ -33,11 +33,11 @@ const mostrarPersonajes = (personajes) => {
         contenedorPadre.innerHTML += `
             <div class="col-md-6 col-lg-3 pb-3">
                 <div class="card h-100">
-                    <img src="${personaje.image}" class="card-img-top" alt="${personaje.name}" style="height: 200px; object-fit: cover;">
+                    <img src="${personaje.image}" class="card-img" alt="${personaje.name}" style="height: 200px; object-fit: contain;">
                     <div class="card-body">
                         <h5 class="card-title">${personaje.name}</h5>
-                        <p class="card-text">${personaje.race || "Raza desconocida"}</p>
-                        <p class="card-text">${personaje.gender || "Género desconocido"}</p>
+                        <p class="card-text">Raza: ${personaje.race || "Raza desconocida"}</p>
+                        <p class="card-text">Género: ${personaje.gender || "Género desconocido"}</p>
                     </div>
                 </div>
             </div>

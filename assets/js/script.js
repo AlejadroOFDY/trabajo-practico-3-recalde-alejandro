@@ -1,4 +1,4 @@
-const dbz_api = "https://dragonball-api.com/api/characters";
+const dbz_api = "https://dragonball-api.com/api/characters?limit=1000";
 const btnBuscar = document.getElementById("btn-buscar");
 const searchInput = document.getElementById("searchInput");
 const contenedorPadre = document.getElementById("contenedor-carta");
@@ -27,7 +27,7 @@ const cargarDatos = async () => {
 /* Función para mostrar personajes */
 const mostrarPersonajes = (personajes) => {
     if (personajes.length === 0) {
-        contenedorPadre.innerHTML = '<p class="text-warning">No se encontraron personajes.</p>';
+        contenedorPadre.innerHTML = '<p class="mensaje-error">No se encontraron personajes.</p>';
         return;
     }
     contenedorPadre.innerHTML = "";

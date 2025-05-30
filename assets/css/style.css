@@ -19,3 +19,19 @@ body {
 .card-title {
     text-align: center;
 }
+
+.mensaje-error {
+    display: inline-block; 
+    background-color: #f5c72f;    
+    color: black;
+    border: 2px solid #f5c6cb;    
+    border-radius: 10px;          
+    padding: 8px 15px;            
+    font-weight: bold;            
+    margin: 20px auto;            
+    text-align: center;
+    width: fit-content
+
+}
+
+/*bg-warning border border-danger rounded text-dark p-1text-center fw-bold">No se encontraron personajes*/

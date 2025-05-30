@@ -8,35 +8,46 @@
     <title>Trabajo Práctico III</title>
 </head>
 <body>
+    <!-- Esta es la caja principal con margen de 5 arriba por eso mt -->
+    <div class="container mt-1">
+        <!-- Primero tiene que ir el título -->
+        <h1 class="text-center text-dark mb-4">Personajes de Dragon Ball</h1>
+        <!-- Ahora va el buscador -->
+        <div class="row mb-4">
+            <!-- Columnas que ocuparán 6 lugares de los 12 con margen horizontal automático -->
+            <div class="col-md-6 mx-auto">
+                <div class="input-group">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Introduzca su personaje...">
+                    <button type="button" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+        </div>
     
-    <div class="container text-center">
-      <button id="btn-buscar" class="btn btn-primary mt-4">TRAER DATOS</button>
-      <h1 class="text-center">API</h1>
-      <div id="contenedor-data" class="row">
+    </div>
         <!-- ACA SE AGREGAN LOS DATOS CON JAVASCRIPT -->
         <!-- CADA CARTA  -->
-         <div class="col-3 pb-2 d-flex justify-content-center">
-          <div class="card">
+        <div class="col-md-3 mx-5 pb-4 d-flex justify-content-center">
+        <div class="card">
             <img
-              class="card-img-top"
-              src="https://dragonball-api.com/characters/goku_normal.webp"
+            class="card-img-top"
+            src="https://dragonball-api.com/characters/goku_normal.webp"
             />
             <div class="card-body">
-              <h5 class="card-title">Goku</h5>
-              <p class="card-text">Saiyan - Male</p>
+            <h5 class="card-title">Goku</h5>
+            <p class="card-text">Saiyan - Male</p>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+    </div>
     </div>
 
     <!-- <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
+<img src="..." class="card-img-top" alt="...">
+<div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+</div>
 </div>  esta son las cartas que tengo que hacer para cada personaje-->
 
 
